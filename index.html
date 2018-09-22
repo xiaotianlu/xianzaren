@@ -1,1 +1,18 @@
-<h1>闲杂人</h1>
+</html>
+<html>
+<head>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+<body>
+<h1 style="text-align:center;color:#678">闲杂人</h1>
+<div style="text-align:center " ><h3 style="color:red;" id="myDiv"></h3></div>
+
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+  htmlobj=$.ajax({url:"https://api.lwl12.com/hitokoto/main/get",async:false});
+  $("#myDiv").html(htmlobj.responseText);
+});
+</script>
+</html>
