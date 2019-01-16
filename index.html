@@ -12,7 +12,7 @@
 </body>
 <script type="text/javascript">
 $(document).ready(function(){
-  htmlobj=$.ajax({url:"https://api.lwl12.com/hitokoto/main/get",async:false});
+  htmlobj=$.ajax({url:"https://api.lwl12.com/hitokoto/v1",async:false});
   $("#myDiv").html(htmlobj.responseText);
 });
 </script>
